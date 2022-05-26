@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- *linha 8* para se ajustar em telas mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *linha 10* titulo da pagina -->
+    <title>Teste</title>
+    <!-- *linha 12* onde coloca o css no HTML-->
+    <style>
+        /* todos h1 ficam com o fundo vermelho */
+        h1 {
+            background: red;
+        }
+
+        /* tudo q ta dentro do p{} fica com fundo rosa */
+        p {
+            background: pink;
+        }
+
+        /* o h1 com o ID 'cabecalho-dois' fica com o fundo cinza */
+        #cabecalho-dois {
+            background: gray;
+        }
+
+        /* tudo que tiver usando a CLASSE fundo vermelho fica com o fundo vermelho */
+        .fundo-vermelho {
+            background: red;
+        }
+
+        /* tudo dentro da classe bold fica azul*/
+        .bold {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        *H1 tamanho do TITULO. existe H1 até o H6 - (h1 > h2 > h3 > h4 > h5 > h6)*
+        *IDs nao podem ser iguais e são para identificar um elemento* 
+        *CLASS podem se repetir*
+        *<b> deixa a palavra em negrito*
+    -->
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda">
+        Blablabla
+    </h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho">
+        Blebleble
+    </h1>
+    <h2 class="fundo-vermelho">
+        O fundo ta vermelho mermo
+    </h2>
+    <p>
+        um texto <b class="bold">qualquer.</b>
+    </p>
+
+</body>
+
+</html>
