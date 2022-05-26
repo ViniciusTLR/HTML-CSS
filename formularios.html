@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label{
+            cursor: pointer;
+            
+        }   
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <!-- o autocomplete não é comum de usar -->
+        <p>O meu formulário</p>
+        <!-- caixa tipo texto -->
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" 
+            name="nome" placeholder="Seu nome" required>  
+        </p>   
+        <!-- uma caixa de seleção -->
+        <p>
+            <label for="dev1">Sou um dev</label>
+            <input type="checkbox" id="dev1" name="dev" value="sim"> 
+            <label for="dev2">Não sou um dev</label>
+            <input type="checkbox" id="dev2" name="dev" value="sim">
+        </p>
+       <!-- uma caixa de seleção objetiva -->
+        <p>
+            Idade: <br>
+            <label for="idade1">-18</label>
+            <input type="radio" id="idade1" name="idade" value="menor"> 
+            <label for="idade2">+18</label>
+            <input type="radio" id="idade2" name="idade" value="jovem">
+            <label for="idade3">+21</label>
+            <input type="radio" id="idade3" name="idade" value="adulto">
+        </p>
+        <!-- data -->
+        <p>
+            <label for="date">Date</label>
+            <input type="date" id="Date" 
+            name="Date" value=""  required>  
+        </p>  
+        <!-- data e hora -->
+        <p>
+            <label for="datetime">Datetime</label>
+            <input type="datetime-local" id="Datetime" 
+            name="Datetime" value="">  
+        </p> 
+        <!-- hora -->
+        <p>
+            <label for="time">time</label>
+            <input type="time" id="time" 
+            name="time" value="" >  
+        </p>
+        <!-- cor -->
+        <p>
+            <label for="cor">cor</label>
+            <input type="color" id="cor" 
+            name="cor" value="">  
+        </p>
+        <!-- email -->
+        <p>
+            <label for="email">email</label>
+            <input type="email" id="email" 
+            name="email" placeholder="Seu email" value=""  required>  
+        </p>
+        <!-- arquivos -->
+        <p>
+            <label for="file">sua foto</label>
+            <input type="file" id="file" 
+            name="file" accept=".png, .svg, .jpg, image/*" multiple>  
+        </p>
+        <!-- numeros -->
+        <p>
+            <label for="number">number</label>
+            <input type="number" id="number" 
+             name="number" placeholder="Digite um numero" multiple
+             min="10" max="50" step="5" >  
+        </p>
+        <!-- senha -->
+            <p>
+                <label for="password">senha:</label>
+                <input type="password" id="password" 
+                 name="password" placeholder="Digite sua senha" required >  
+            </p>
+            <!-- "volume" -->
+            <p>
+                <label for="range">range:</label>
+                <input type="range" id="range" 
+                 name="range" min="0" max="10" step="2">
+            </p>
+            <!-- URL -->
+            <p>
+                <label for="url">Sua url:</label>
+                <input type="url" id="url" 
+                 name="url" placeholder="URL" >  
+            </p>
+            <!-- pesquisar -->
+            <p>
+                <label for="search">search:</label>
+                <input type="search" id="search" 
+                 name="search" placeholder="pesquise" >  
+            </p>
+            <!-- selecionar uma opção -->
+            <p>
+                <label for="select">Selecione alguma coisa:</label>
+                 <select name="select" id="select">
+                     <optgroup label="Grupo1">
+                     <option value="qualquer1">Valor1</option>
+                     <option value="qualquer2">Valor2</option>
+                     <option value="qualquer3">Valor3</option>
+                    </optgroup>
+                 </select>
+            </p>
+            <!-- area de texto livre -->
+            <p>
+                <label for="textarea">Area de texto:</label>
+                  <textarea name="textarea" id="textarea" 
+                  cols="50" rows="10"></textarea>
+            </p>
+
+            <!-- botões -->
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+
+    </form>
+
+</body>
+
+</html>
