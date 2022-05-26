@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+   background: gray;
+    
+    
+}
+    
+ nav a{
+     color: #ffffff;
+     text-decoration: none;
+     font-family: sans-serif;
+     padding: 10px;
+     display: block;
+     text-transform: uppercase;
+     
+ } 
+
+ nav a:hover{
+     background:rgba(0, 0, 0, 0.3)
+ }
+
+ nav{
+     display: flex;
+    align-items: center;
+ } 
+ 
+ nav ul{
+     display: flex;
+     list-style-type: none;
+     background: pink;
+     
+ }
+</style>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- lista nao ordenada -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!-- lista ordenada -->
+    <ol type="">
+        <!-- type="1, A, a, i, I" / start="2" para começar a lista pelo numero dois -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl>
+        <dt>item</dt>
+        <dd>descrição do item</dd>
+    </dl>
+</body>
+
+</html>
