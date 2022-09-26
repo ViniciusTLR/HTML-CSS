@@ -1,0 +1,45 @@
+/*  px é uma medida absoluta 
+    em se baseia na multiplicação da font "pai"
+    rm se baseia na multiplicação da font do html
+    vw tamanho da view port width 100 = 100% da view port
+    vh tamanho da view port height 100 = 100% da view port
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html{
+    font-size: 20px;
+}
+
+.pai{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+.pai > div{
+    width: 50%;
+    height: 50rem;
+    background: purple;
+}
+
+.color-one{
+    background-color: blue;
+}
+
+.color-two{
+    background-color: yellow;
+}
+
+p{
+    /*font-size: 20px;
+    font-size: 1em;*/
+    font-size: 1rem;
+}
+
