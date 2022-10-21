@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+   /* flex-direction: row;*/
+   align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: green;
+    height: 640px;
+   /* gap: 30px;*/
+}
+
+.flex-item{
+    width: 33.33%;
+    background: purple;
+    
+}
