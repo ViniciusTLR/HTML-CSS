@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    background: green;
+    align-items: flex-start;
+    height: 400px;
+
+}
+
+.flex-item {
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 320px;
+    flex: 1 1 320px;*/
+    width: 100%;
+    background: purple;
+
+    /*flex-grow permite aumentar a largura
+    dos elementos dentro do contêiner para
+    completar o espaço disponível no eixo
+     principal, a propriedade flex-shrink
+     faz o oposto, controlando a redução
+     dos mesmos.*/
+
+    /*flex-basis é uma propriedade que 
+     utilizamos quando há a possibilidade
+      de usar o flex-grow para
+       "esticarmos" o elemento. Ele 
+       servirá, como o próprio nome diz, 
+       como uma base para eles.*/
+}
+
+.flex-item:nth-child(2){
+    flex: 1 1 320px;
+    background: orange;
+    align-self: stretch;
+}
+
+.flex-item:nth-child(3){
+align-self: flex-end;
+}
+
+.flex-item:nth-child(4){
+    order: 1;
+
+    /* faz o item 4 ir para ultimo item*/
+}
