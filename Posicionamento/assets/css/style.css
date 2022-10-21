@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+/*.pai{
+    height: 300vh;
+}
+
+.filha1, .filha2, .filha3{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 10px;
+    position: static;
+}
+
+.filha2{
+    position: fixed;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.filha1{
+    position: absolute;
+    /* linha 27 a 30 é para deixar o elemento no meio da tela de qualquer maneira
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    left: 50%;
+    z-index: 2;
+}
+/* z-index especifica a ordem de sobreposição dos elementos na tela-
+
+.filha3{
+    background-color: blue;
+    position: relative;
+    top: 100px;
+    z-index: -1;
+}
+
+.outra{
+    position: absolute;
+    font-size: 50px;
+    background-color: white;
+    top: 50px;
+    left: 50px;
+}*/
+
+ul{
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky{
+    position: sticky;
+    background-color: gray;
+    top: 0;
+
+}
+
+/*position: sticky - Basta dar scroll na página até que os subtítulos do post batam no topo.
+     Quando batem, ficam fixos no topo até que o elemento em que ele está contido*/
